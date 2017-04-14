@@ -72,7 +72,7 @@ exports.update = function(key, value, update) {
   assert(key, "Missing key for update")
   assert(value, "Missing value for update");
   assert(update, "Need an object to update with");
-  
+
   let user = _.find(users, [key, value]);
 
   _.assign(user, update);
